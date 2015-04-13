@@ -83,7 +83,7 @@ var work = {
 	],
 };
 // This function formats and displays the Work info on the resume page
-function displayWork() {
+work.Display = function() {
 for (job in work.jobs) {
 	//Create the Work div
 	$("#workExperience").append(HTMLworkStart);
@@ -100,12 +100,9 @@ for (job in work.jobs) {
 	}
 };
 // Run the display function
-displayWork();
-
-// })(this);
+work.Display();
 
 
-//(function(window) {
 // Create the projects object
 var projects = {
 	"projects": [
@@ -145,10 +142,9 @@ var projects = {
 	}
 // Run the display function
 projects.display();
-//})(this);
 
 
-//(function(window) {
+
 // Create the education object
 var education = {
 	"schools": [
